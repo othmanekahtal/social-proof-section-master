@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap");
+/* font-family: 'Spartan', sans-serif; */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body,
+body .container,
+.container .top__content,
+.container .bottom__cards_review,
+.top__content .rate {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body {
+  font-size: 15px;
+  font-family: "Spartan", sans-serif;
+  height: 100vh;
+  overflow: hidden;
+  background-color: hsl(0, 0%, 100%);
+  background-image: url("../images/bg-pattern-top-desktop.svg"),
+    url("../images/bg-pattern-bottom-desktop.svg");
+  background-repeat: no-repeat;
+  background-position: top left, bottom right;
+  flex-direction: column;
+}
+body .container {
+  max-height: 75vh;
+  width: 75%;
+  flex-direction: column;
+}
+.container p {
+  font-weight: 500;
+}
+
+.container .top__content {
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 75px;
+}
+.top__content .content_rate {
+  flex-basis: 45%;
+}
+.top__content h1 {
+  color: hsl(300, 43%, 22%);
+  font-size: 3em;
+  padding-bottom: 10px;
+  font-weight: 700;
+}
+.top__content h1 + p {
+  color: hsl(303, 10%, 53%);
+}
+.top__content .rate {
+  background-color: hsl(300, 24%, 96%);
+  padding: 10px 25px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  justify-content: space-around;
+  width: 400px;
+  position: relative;
+}
+.top__content .rate1 {
+  right: 100px;
+}
+.top__content .rate2 {
+  right: 50px;
+}
+.rate p {
+  font-weight: 700;
+  color: hsl(300, 43%, 22%) !important;
+  font-size: 0.8em;
+}
+.container .bottom__cards_review {
+  justify-content: space-between;
+}
+.bottom__cards_review .card {
+  border-radius: 5px;
+  background-color: hsl(300, 43%, 22%);
+  color: hsl(300, 24%, 96%);
+  padding: 15px 30px;
+  position: relative;
+  flex-basis: 32%;
+}
+.bottom__cards_review .card1 {
+  top: -40px;
+}
+.bottom__cards_review .card2 {
+  top: -20px;
+}
+.card .profile {
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+.card .profile img {
+  float: left;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.card p {
+  font-size: 0.95em;
+  font-weight: 500;
+  line-height: 1.4;
+}
+.card .title_card {
+  margin-top: 7px;
+  font-weight: 700;
+}
+.card .verified_card {
+  font-weight: 400;
+  color: hsl(333, 80%, 67%);
+  padding-top: 5px;
+  font-size: 0.94em;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  body,
+  body .container,
+  .container .top__content,
+  .container .bottom__cards_review {
+    display: block !important;
+  }
+  body {
+    overflow: auto;
+  }
+  .container {
+    padding: 50px 0;
+    width: 90%;
+    margin: 15px auto;
+    max-height: none !important;
+  }
+  .container .content_rate {
+    margin-bottom: 25px;
+  }
+  .top__content h1 {
+    margin-bottom: 25px;
+  }
+  .top__content h1,
+  .top__content p {
+    text-align: center;
+  }
+  .top__content .rate {
+    position: static;
+  }
+}
