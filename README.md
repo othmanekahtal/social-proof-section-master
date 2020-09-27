@@ -1,5 +1,4 @@
 # social-proof-section-master
-<hr>
 This Design is a challenge in Frontend Mentor,it's Responsive olso !!
 <br/>
 his project will test your layout skills. If you're starting to get confident with Flexbox or Grid, this will provide a nice challenge!
