@@ -154,4 +154,8 @@ body .container {
   .top__content .rate {
     position: static;
   }
+  .attribution {
+    position: relative;
+    bottom: 0;
+}
 }
